@@ -138,3 +138,8 @@ git config --global core.excludesFile .gitignore
 
 ##git config
 git config --global --list
+
+##tags
+Light weight - tag + commit message
+Annoted tags - tag + user defined message
+
