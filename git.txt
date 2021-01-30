@@ -133,3 +133,6 @@ Change the default branch
 ##Amend practice
 git commit --amend -m " check"
 
+##gitignore
+git config --global core.excludesFile .gitignore
+
