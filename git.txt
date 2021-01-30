@@ -130,3 +130,6 @@ Change the default branch
  git push --set-upstream origin <branchname>
  
 
+##Amend practice
+
+git commit --amend -m " check"
