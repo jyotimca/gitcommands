@@ -136,3 +136,5 @@ git commit --amend -m " check"
 ##gitignore
 git config --global core.excludesFile .gitignore
 
+##git config
+git config --global --list
