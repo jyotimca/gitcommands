@@ -141,5 +141,11 @@ git config --global --list
 
 ##tags
 Light weight - tag + commit message
+git tag v1 commit id
+
 Annoted tags - tag + user defined message
+git tag -a v1 commit id -m "message"
+## to see tag 
+git tag --list
+git tag -n (with message)
 
