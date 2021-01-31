@@ -149,9 +149,21 @@ git tag -a v1 commit id -m "message"
 git tag --list
 git tag -n (with message)
 
-## clean
+## clean untracked files
 1)To view the implication of the clean command - Git clean –dry-run
 2)To force delete the file from the repo - Git clean -f
 3)To delete dir - Git clean -f -d
 4)To delete all the files and dir - Git clean -f -d
 5)To delete all the ignored file in one go - Git clean -f -x
+
+
+## remove tracked files
+1. git rm -f filename
+
+## remove tracked files
+
+git rm -r -f filenameindirector
+
+files under folder
+
+git rm -r folder/
