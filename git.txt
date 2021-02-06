@@ -167,3 +167,18 @@ git rm -r -f filenameindirector
 files under folder
 
 git rm -r folder/
+
+##branch
+
+1)	I want to see the branches available in this repository then:
+Git branch >> 
+2)	I want to see all the branches including local and remote branches:
+Git branch -a >> 
+4)	Delete a branch
+Git branch <branchname> -d
+5)	Rename a branch
+Git branch -m  <oldName> <newName>
+6)	If you are on the branch you want to rename:
+git branch -m new-name
+7)	Delete the old-name remote branch and push the new-name local branch
+git push origin :old-name new-name
