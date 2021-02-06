@@ -182,3 +182,28 @@ Git branch -m  <oldName> <newName>
 git branch -m new-name
 7)	Delete the old-name remote branch and push the new-name local branch
 git push origin :old-name new-name
+
+#Recursive
+1) Create Develop branch from master branch
+2) switch to develop branch and create yourname.html
+3) Commit changes into develop
+4) now create two branch from develop f1 and f2
+5) go F1 modify an old file by adding new line of text
+6) go to f2 create new file and commit
+7) go to develop and run git merge f2
+8) go to f1 and run git merge develop
+9) here recursive merge will take place
+10) go to Develop and run git merge f1
+
+#rebase
+
+1) New project
+2) Master create A1 and A2 commits
+3) Create a branch feature from A2 Commit of master
+4) Now make 1 commit from feature branch as X1
+5) go to master and Create new file and add a commit A3
+6) From Feature branch create another commit X2
+7) run git rebase master
+8) git log --oneline should show A1, A2, A3, X1, X2 as the history
+9) go to Master and run git rebase feature
+10) git log --oneline should show A1, A2, A3, X1, X2 as the history
